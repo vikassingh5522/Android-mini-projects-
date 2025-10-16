@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Spotify</string>
+    <string name="spotify_logo">Spotify Logo</string>
+    <string name="good_morning">Good Morning!</string>
+    <string name="settings">settings</string>
+    <string name="wholesome_songs">Wholesome Songs</string>
+    <string name="image">image</string>
+    <string name="lag_ja_gale">Lag Ja Gale</string>
+    <string name="lata_mangeshkar">Lata Mangeshkar</string>
+    <string name="home">home</string>
+    <string name="darasal">Darasal</string>
+    <string name="atif_aslam">Atif Aslam</string>
+    <string name="ajab_si">Ajab Si</string>
+    <string name="vishal_shekhar">Vishal Shekhar</string>
+    <string name="tu_hi_hai">Tu Hi Hai</string>
+    <string name="arijit_singh">Arijit Singh</string>
+    <string name="hawayein">Hawayein</string>
+    <string name="jab_tak">Jab Tak</string>
+    <string name="armaan_malik">Armaan Malik</string>
+    <string name="mera_man_kahane_laga">Mera Man Kahane Laga</string>
+    <string name="ayushman_khurana">Ayushman Khurana</string>
+    <string name="sajde">Sajde</string>
+    <string name="pritam_kk">Pritam, KK</string>
+    <string name="tera_hone_laga_hu">Tera Hone Laga Hu</string>
+    <string name="javed_ali">Javed Ali</string>
+    <string name="tum_tak">Tum Tak</string>
+</resources>

@@ -1,0 +1,1073 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/black" tools:context=".MainActivity">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:scrollbars="none">
+        <!-- ScrollView Structure -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="20dp" android:layout_marginTop="10dp" android:orientation="vertical">
+            <!-- Spotify Logo -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:gravity="center">
+                <ImageView android:layout_width="match_parent" android:layout_height="40dp" android:contentDescription="spotify_logo" android:src="@drawable/logo"/>
+            </LinearLayout>
+            <!-- Greetings -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:gravity="center_vertical" android:orientation="horizontal" tools:ignore="UseCompoundDrawables">
+                <TextView android:id="@+id/textview" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="good_morning" android:textColor="@color/white" android:textSize="20sp"/>
+                <ImageView android:layout_width="30dp" android:layout_height="25dp" android:contentDescription="settings" android:src="@drawable/settings"/>
+            </LinearLayout>
+            <!-- Playlist 1 -->
+            <TextView android:id="@+id/textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bollywood Butter" android:textColor="@color/white" android:textSize="20sp" android:textStyle="bold" tools:ignore="DuplicateIds"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:fillViewport="true" android:scrollbars="none">
+                <!--  All Songs In Horizontal Layout  -->
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="140dp" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <!--  Song Details  -->
+                    <!-- lag_ja_gale -->
+                    <LinearLayout android:id="@+id/lag_ja_gale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/lag_ja_gale" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lag_ja_gale" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lata_mangeshkar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- darasal -->
+                    <LinearLayout android:id="@+id/darasal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/darasal" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/darasal" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- ajab_si -->
+                    <LinearLayout
+                        android:id="@+id/ajab_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/action_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:contentDescription="image"
+                            android:src="@drawable/ajab_si"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/song_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ajab_si"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            tools:ignore="DuplicateIds" />
+
+                        <TextView
+                            android:id="@+id/song_artist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vishal_shekhar"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            tools:ignore="DuplicateIds" />
+                    </LinearLayout>
+                    <!-- dear_zindagi -->
+                    <LinearLayout android:id="@+id/dear_zindagi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/dear_zindagi" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tu_hi_hai" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tera_hone_laga_hu -->
+                    <LinearLayout android:id="@+id/tera_hone_laga_hu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tera_hone_laga_hu" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tera_hone_laga_hu" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tum_tak -->
+                    <LinearLayout android:id="@+id/tum_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tum_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tum_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/javed_ali" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  End of Song Details  -->
+            </HorizontalScrollView>
+            <!-- Playlist 2 -->
+            <TextView android:id="@+id/textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bollywood Bash" android:textColor="@color/white" android:textSize="20sp" android:textStyle="bold" tools:ignore="DuplicateIds"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:fillViewport="true" android:scrollbars="none">
+                <!--  All Songs In Horizontal Layout  -->
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="140dp" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <!--  Song Details  -->
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- lag_ja_gale -->
+                    <LinearLayout android:id="@+id/lag_ja_gale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/lag_ja_gale" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lag_ja_gale" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lata_mangeshkar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- darasal -->
+                    <LinearLayout android:id="@+id/darasal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/darasal" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/darasal" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- ajab_si -->
+                    <LinearLayout android:id="@+id/ajab_si" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/ajab_si" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ajab_si" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vishal_shekhar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- dear_zindagi -->
+                    <LinearLayout android:id="@+id/dear_zindagi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/dear_zindagi" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tu_hi_hai" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tera_hone_laga_hu -->
+                    <LinearLayout android:id="@+id/tera_hone_laga_hu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tera_hone_laga_hu" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tera_hone_laga_hu" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tum_tak -->
+                    <LinearLayout android:id="@+id/tum_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tum_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tum_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/javed_ali" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  End of Song Details  -->
+            </HorizontalScrollView>
+            <!-- Playlist 3 -->
+            <TextView android:id="@+id/textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Chill Hindi Hits" android:textColor="@color/white" android:textSize="20sp" android:textStyle="bold" tools:ignore="DuplicateIds"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:fillViewport="true" android:scrollbars="none">
+                <!--  All Songs In Horizontal Layout  -->
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="140dp" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <!--  Song Details  -->
+                    <!-- tera_hone_laga_hu -->
+                    <LinearLayout android:id="@+id/tera_hone_laga_hu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tera_hone_laga_hu" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tera_hone_laga_hu" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tum_tak -->
+                    <LinearLayout android:id="@+id/tum_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tum_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tum_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/javed_ali" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- dear_zindagi -->
+                    <LinearLayout android:id="@+id/dear_zindagi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/dear_zindagi" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tu_hi_hai" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- lag_ja_gale -->
+                    <LinearLayout android:id="@+id/lag_ja_gale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/lag_ja_gale" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lag_ja_gale" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lata_mangeshkar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- darasal -->
+                    <LinearLayout android:id="@+id/darasal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/darasal" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/darasal" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- ajab_si -->
+                    <LinearLayout android:id="@+id/ajab_si" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/ajab_si" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ajab_si" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vishal_shekhar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  End of Song Details  -->
+            </HorizontalScrollView>
+            <!-- Playlist 4 -->
+            <TextView android:id="@+id/textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Desi Hip-Hop" android:textColor="@color/white" android:textSize="20sp" android:textStyle="bold" tools:ignore="DuplicateIds"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:fillViewport="true" android:scrollbars="none">
+                <!--  All Songs In Horizontal Layout  -->
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="140dp" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <!--  Song Details  -->
+                    <!-- lag_ja_gale -->
+                    <LinearLayout android:id="@+id/lag_ja_gale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/lag_ja_gale" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lag_ja_gale" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lata_mangeshkar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- darasal -->
+                    <LinearLayout android:id="@+id/darasal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/darasal" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/darasal" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- ajab_si -->
+                    <LinearLayout android:id="@+id/ajab_si" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/ajab_si" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ajab_si" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vishal_shekhar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- dear_zindagi -->
+                    <LinearLayout android:id="@+id/dear_zindagi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/dear_zindagi" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tu_hi_hai" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tera_hone_laga_hu -->
+                    <LinearLayout android:id="@+id/tera_hone_laga_hu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tera_hone_laga_hu" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tera_hone_laga_hu" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tum_tak -->
+                    <LinearLayout android:id="@+id/tum_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tum_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tum_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/javed_ali" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  End of Song Details  -->
+            </HorizontalScrollView>
+            <!-- Playlist 5 -->
+            <TextView android:id="@+id/textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Romantic Hindi Songs" android:textColor="@color/white" android:textSize="20sp" android:textStyle="bold" tools:ignore="DuplicateIds"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:fillViewport="true" android:scrollbars="none">
+                <!--  All Songs In Horizontal Layout  -->
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="140dp" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <!--  Song Details  -->
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- lag_ja_gale -->
+                    <LinearLayout android:id="@+id/lag_ja_gale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/lag_ja_gale" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lag_ja_gale" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lata_mangeshkar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- darasal -->
+                    <LinearLayout android:id="@+id/darasal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/darasal" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/darasal" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- ajab_si -->
+                    <LinearLayout android:id="@+id/ajab_si" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/ajab_si" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ajab_si" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vishal_shekhar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- dear_zindagi -->
+                    <LinearLayout android:id="@+id/dear_zindagi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/dear_zindagi" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tu_hi_hai" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tera_hone_laga_hu -->
+                    <LinearLayout android:id="@+id/tera_hone_laga_hu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tera_hone_laga_hu" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tera_hone_laga_hu" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tum_tak -->
+                    <LinearLayout android:id="@+id/tum_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tum_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tum_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/javed_ali" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  End of Song Details  -->
+            </HorizontalScrollView>
+            <!-- Playlist 6 -->
+            <TextView android:id="@+id/textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Punjabi Party" android:textColor="@color/white" android:textSize="20sp" android:textStyle="bold" tools:ignore="DuplicateIds"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:fillViewport="true" android:scrollbars="none">
+                <!--  All Songs In Horizontal Layout  -->
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="140dp" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <!--  Song Details  -->
+                    <!-- tera_hone_laga_hu -->
+                    <LinearLayout android:id="@+id/tera_hone_laga_hu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tera_hone_laga_hu" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tera_hone_laga_hu" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tum_tak -->
+                    <LinearLayout android:id="@+id/tum_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tum_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tum_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/javed_ali" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- dear_zindagi -->
+                    <LinearLayout android:id="@+id/dear_zindagi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/dear_zindagi" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tu_hi_hai" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- lag_ja_gale -->
+                    <LinearLayout android:id="@+id/lag_ja_gale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/lag_ja_gale" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lag_ja_gale" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lata_mangeshkar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- darasal -->
+                    <LinearLayout android:id="@+id/darasal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/darasal" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/darasal" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- ajab_si -->
+                    <LinearLayout android:id="@+id/ajab_si" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/ajab_si" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ajab_si" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vishal_shekhar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  End of Song Details  -->
+            </HorizontalScrollView>
+            <!-- Playlist 7 -->
+            <TextView android:id="@+id/textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Retro Bollywood" android:textColor="@color/white" android:textSize="20sp" android:textStyle="bold" tools:ignore="DuplicateIds"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:fillViewport="true" android:scrollbars="none">
+                <!--  All Songs In Horizontal Layout  -->
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="140dp" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <!--  Song Details  -->
+                    <!-- lag_ja_gale -->
+                    <LinearLayout android:id="@+id/lag_ja_gale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/lag_ja_gale" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lag_ja_gale" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lata_mangeshkar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- darasal -->
+                    <LinearLayout android:id="@+id/darasal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/darasal" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/darasal" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- ajab_si -->
+                    <LinearLayout android:id="@+id/ajab_si" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/ajab_si" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ajab_si" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vishal_shekhar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- dear_zindagi -->
+                    <LinearLayout android:id="@+id/dear_zindagi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/dear_zindagi" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tu_hi_hai" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tera_hone_laga_hu -->
+                    <LinearLayout android:id="@+id/tera_hone_laga_hu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tera_hone_laga_hu" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tera_hone_laga_hu" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tum_tak -->
+                    <LinearLayout android:id="@+id/tum_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tum_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tum_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/javed_ali" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  End of Song Details  -->
+            </HorizontalScrollView>
+            <!-- Playlist 8 -->
+            <TextView android:id="@+id/textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bollywood Unplugged" android:textColor="@color/white" android:textSize="20sp" android:textStyle="bold" tools:ignore="DuplicateIds"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:fillViewport="true" android:scrollbars="none">
+                <!--  All Songs In Horizontal Layout  -->
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="140dp" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <!--  Song Details  -->
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- lag_ja_gale -->
+                    <LinearLayout android:id="@+id/lag_ja_gale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/lag_ja_gale" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lag_ja_gale" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lata_mangeshkar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- darasal -->
+                    <LinearLayout android:id="@+id/darasal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/darasal" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/darasal" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- ajab_si -->
+                    <LinearLayout android:id="@+id/ajab_si" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/ajab_si" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ajab_si" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vishal_shekhar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- dear_zindagi -->
+                    <LinearLayout android:id="@+id/dear_zindagi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/dear_zindagi" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tu_hi_hai" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tera_hone_laga_hu -->
+                    <LinearLayout android:id="@+id/tera_hone_laga_hu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tera_hone_laga_hu" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tera_hone_laga_hu" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tum_tak -->
+                    <LinearLayout android:id="@+id/tum_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tum_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tum_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/javed_ali" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  End of Song Details  -->
+            </HorizontalScrollView>
+            <!-- Playlist 9 -->
+            <TextView android:id="@+id/textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sufi and Ghazals" android:textColor="@color/white" android:textSize="20sp" android:textStyle="bold" tools:ignore="DuplicateIds"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:fillViewport="true" android:scrollbars="none">
+                <!--  All Songs In Horizontal Layout  -->
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="140dp" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <!--  Song Details  -->
+                    <!-- tera_hone_laga_hu -->
+                    <LinearLayout android:id="@+id/tera_hone_laga_hu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tera_hone_laga_hu" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tera_hone_laga_hu" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tum_tak -->
+                    <LinearLayout android:id="@+id/tum_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tum_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tum_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/javed_ali" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- dear_zindagi -->
+                    <LinearLayout android:id="@+id/dear_zindagi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/dear_zindagi" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tu_hi_hai" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- lag_ja_gale -->
+                    <LinearLayout android:id="@+id/lag_ja_gale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/lag_ja_gale" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lag_ja_gale" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lata_mangeshkar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- darasal -->
+                    <LinearLayout android:id="@+id/darasal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/darasal" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/darasal" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- ajab_si -->
+                    <LinearLayout android:id="@+id/ajab_si" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/ajab_si" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ajab_si" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vishal_shekhar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  End of Song Details  -->
+            </HorizontalScrollView>
+            <!-- Playlist 10 -->
+            <TextView android:id="@+id/textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bollywood Workout" android:textColor="@color/white" android:textSize="20sp" android:textStyle="bold" tools:ignore="DuplicateIds"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:fillViewport="true" android:scrollbars="none">
+                <!--  All Songs In Horizontal Layout  -->
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="140dp" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <!--  Song Details  -->
+                    <!-- lag_ja_gale -->
+                    <LinearLayout android:id="@+id/lag_ja_gale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/lag_ja_gale" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lag_ja_gale" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lata_mangeshkar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- darasal -->
+                    <LinearLayout android:id="@+id/darasal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/darasal" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/darasal" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- ajab_si -->
+                    <LinearLayout android:id="@+id/ajab_si" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/ajab_si" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ajab_si" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vishal_shekhar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- dear_zindagi -->
+                    <LinearLayout android:id="@+id/dear_zindagi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/dear_zindagi" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tu_hi_hai" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tera_hone_laga_hu -->
+                    <LinearLayout android:id="@+id/tera_hone_laga_hu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tera_hone_laga_hu" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tera_hone_laga_hu" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tum_tak -->
+                    <LinearLayout android:id="@+id/tum_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tum_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tum_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/javed_ali" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  End of Song Details  -->
+            </HorizontalScrollView>
+            <!-- Playlist 11 -->
+            <TextView android:id="@+id/textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Chill Hindi Hits" android:textColor="@color/white" android:textSize="20sp" android:textStyle="bold" tools:ignore="DuplicateIds"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:fillViewport="true" android:scrollbars="none">
+                <!--  All Songs In Horizontal Layout  -->
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="140dp" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <!--  Song Details  -->
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- lag_ja_gale -->
+                    <LinearLayout android:id="@+id/lag_ja_gale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/lag_ja_gale" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lag_ja_gale" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lata_mangeshkar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- darasal -->
+                    <LinearLayout android:id="@+id/darasal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/darasal" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/darasal" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- ajab_si -->
+                    <LinearLayout android:id="@+id/ajab_si" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/ajab_si" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ajab_si" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vishal_shekhar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- dear_zindagi -->
+                    <LinearLayout android:id="@+id/dear_zindagi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/dear_zindagi" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tu_hi_hai" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tera_hone_laga_hu -->
+                    <LinearLayout android:id="@+id/tera_hone_laga_hu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tera_hone_laga_hu" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tera_hone_laga_hu" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tum_tak -->
+                    <LinearLayout android:id="@+id/tum_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tum_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tum_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/javed_ali" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  End of Song Details  -->
+            </HorizontalScrollView>
+            <!-- Playlist 12 -->
+            <TextView android:id="@+id/textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wholesome_songs" android:textColor="@color/white" android:textSize="20sp" android:textStyle="bold" tools:ignore="DuplicateIds"/>
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="60dp" android:fillViewport="true" android:scrollbars="none">
+                <!--  All Songs In Horizontal Layout  -->
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="140dp" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+                    <!--  Song Details  -->
+                    <!-- tera_hone_laga_hu -->
+                    <LinearLayout android:id="@+id/tera_hone_laga_hu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tera_hone_laga_hu" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tera_hone_laga_hu" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- tum_tak -->
+                    <LinearLayout android:id="@+id/tum_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/tum_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tum_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/javed_ali" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- dear_zindagi -->
+                    <LinearLayout android:id="@+id/dear_zindagi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/dear_zindagi" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tu_hi_hai" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- lag_ja_gale -->
+                    <LinearLayout android:id="@+id/lag_ja_gale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/lag_ja_gale" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lag_ja_gale" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lata_mangeshkar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- darasal -->
+                    <LinearLayout android:id="@+id/darasal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/darasal" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/darasal" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/atif_aslam" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- ajab_si -->
+                    <LinearLayout android:id="@+id/ajab_si" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/ajab_si" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ajab_si" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vishal_shekhar" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- hawayein -->
+                    <LinearLayout android:id="@+id/hawayein" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/hawayein" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/hawayein" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/arijit_singh" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- jab_tak -->
+                    <LinearLayout android:id="@+id/jab_tak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/jab_tak" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/jab_tak" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/armaan_malik" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- mera_man_kahane_laga -->
+                    <LinearLayout android:id="@+id/mera_man_kahane_laga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/mera_man_kahane_laga" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mera_man_kahane_laga" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ayushman_khurana" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                    <!-- sajde -->
+                    <LinearLayout android:id="@+id/sajde" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:orientation="vertical" tools:ignore="DuplicateIds">
+                        <ImageView android:id="@+id/action_image" android:layout_width="100dp" android:layout_height="100dp" android:contentDescription="@string/image" android:src="@drawable/sajde" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sajde" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                        <TextView android:id="@+id/song_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/pritam_kk" android:textAlignment="center" android:textColor="@color/white" android:textSize="12sp" tools:ignore="DuplicateIds"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!--  End of Song Details  -->
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+    <!-- Navigation Bar -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true" android:background="#EA000000" android:gravity="center_vertical" android:orientation="horizontal">
+        <ImageView android:layout_width="35dp" android:layout_height="35dp" android:layout_weight="1" android:contentDescription="@string/home" android:src="@drawable/home"/>
+        <ImageView android:layout_width="35dp" android:layout_height="35dp" android:layout_weight="1" android:contentDescription="@string/home" android:src="@drawable/search"/>
+        <ImageView android:layout_width="35dp" android:layout_height="35dp" android:layout_weight="1" android:contentDescription="@string/home" android:src="@drawable/menu"/>
+        <ImageView android:layout_width="35dp" android:layout_height="35dp" android:layout_weight="1" android:contentDescription="@string/home" android:src="@drawable/user"/>
+    </LinearLayout>
+</RelativeLayout>
